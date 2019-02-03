@@ -125,7 +125,7 @@ set $ws3 "3 "
 set $ws4 "4 "
 set $ws5 "5 "
 set $ws6 "6 "
-set $ws7 "7 "
+set $ws7 "7 "
 set $ws8 "8 "
 set $ws9 "9 "
 set $ws10 "10 "
@@ -312,5 +312,5 @@ bindsym $mod+Shift+C    exec --no-startup-id code
 bindsym $mod+b                move scratchpad
 bindsym $mod+Shift+B          scratchpad show
 
-exec_always --no-startup-id /home/tachyon/scripts/battest.sh
+exec --no-startup-id /home/tachyon/scripts/battest.sh
 

@@ -1,0 +1,45 @@
+##### zathurarc / RESLOVED ########################
+
+##### APPEARNACE ##################################
+
+set font "Hasklug Nerd Font Mono 9"
+
+set default-fg "#ffffff"
+set default-bg "#1b1d1e"
+
+
+
+set recolor-darkcolor  "#1b1d1e"
+set recolor-lightcolor "#8a8a8a"
+
+set statusbar-fg "#ffffff"
+set statusbar-bg "#1b1d1e"
+
+set inputbar-fg "#ffffff"
+set inputbar-bg "#1b1d1e"
+
+set completion-fg "#465457"
+set completion-bg "#1b1d1e"
+
+set completion-group-fg "#ffffff"
+set completion-group-bg "#1b1d1e"
+
+set completion-highlight-fg "#ffffff"
+set completion-highlight-bg "#1b1d1e"
+
+set index-fg "#465457"
+set index-bg "#1b1d1e"
+
+set index-active-fg "#ffffff"
+set index-active-bg "#1b1d1e"
+
+set page-padding 0
+
+set guioptions
+
+##### BINDS ##################################
+
+map <M-s> toggle_statusbar
+
+map <M-i> zoom in
+map <M-o> zoom out
