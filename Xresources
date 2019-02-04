@@ -76,7 +76,7 @@ URxvt.letterSpace: 0
 !     |
 !     |
 !     V
-URxvt.font: xft: MonacoB:size=12, xft:Font Awesome 5 Brands:size=9, xft:Font Awesome 5 Free Solid:size=7, xft:Monaco for Powerline:size=10
+URxvt.font: xft: MonacoB:size=13, xft:Font Awesome 5 Brands:size=9, xft:Font Awesome 5 Free Solid:size=7, xft:Monaco for Powerline:size=10, xft:devicons:size=10, xft: Droid Sans Mono Nerd Font Mono:size=12
 ! xft:Font Awesome 5 Free Regular:size=12
 ! xft:Icons:size=12
 
