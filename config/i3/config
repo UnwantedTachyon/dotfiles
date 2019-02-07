@@ -314,3 +314,7 @@ bindsym $mod+Shift+B          scratchpad show
 
 exec --no-startup-id /home/tachyon/scripts/battest.sh
 
+bindsym $mod+n                  exec termite --name="Sticky"
+for_window [instance=Sticky] floating enable, sticky enable, resize set 800 500, move position 1120 580
+
+bindsym $mod+BackSpace          exec --no-startup-id bash ~/scripts/flash_win.sh
