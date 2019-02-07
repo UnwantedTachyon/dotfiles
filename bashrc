@@ -109,7 +109,8 @@ function promptcmd()
         #=========================================================
         # Insert a new line to clear space from previous command
         #=========================================================
-        PS1="\n"
+        #PS1="\n"
+        PS1=""
 
         #=========================================================
         # Beginning of first line (arrow wrap around and color setup)
@@ -119,9 +120,9 @@ function promptcmd()
         #=========================================================
         # First Dynamic Block - Previous Command Error
         #=========================================================
-        if [ $PREVRET -ne 0 ] ; then
-                PS1="${PS1}${cBRACKETS}[${cERROR}:(${cBRACKETS}]${cLINES}\342\224\200"
-        fi
+#        if [ $PREVRET -ne 0 ] ; then
+#                PS1="${PS1}${cBRACKETS}[${cERROR}:(${cBRACKETS}]${cLINES}\342\224\200"
+#        fi
 
         #=========================================================
         # First static block - Current time
@@ -189,8 +190,10 @@ function promptcmd()
         #=========================================================
         # Third Static Block - Current Directory
         #=========================================================
-        PS1="${PS1}[${cPWD}\w${cBRACKETS}]"
-
+        #### directory  base name
+        PS1="${PS1}[${cPWD}\W${cBRACKETS}]"
+        #### full directory
+        # PS1="${PS1}[${cPWD}\w${cBRACKETS}]"
         #=========================================================
         # Second Line
         #=========================================================
@@ -216,7 +219,6 @@ function load_prompt () {
 }
 
 load_prompt
-
 
 
 
