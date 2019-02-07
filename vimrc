@@ -329,3 +329,21 @@ autocmd WinEnter * setlocal cursorline
 autocmd WinLeave * setlocal nocursorline
 highlight CursorLine guibg=#303000 ctermbg=234
 
+set nocompatible
+
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'L9'
+
+call vundle#end()
+
+filetype plugin indent on
+highlight Visual cterm=bold ctermbg=black ctermfg=NONE
+
+set nohlsearch
