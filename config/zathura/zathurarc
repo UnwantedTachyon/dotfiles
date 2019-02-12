@@ -41,5 +41,5 @@ set guioptions
 
 map <M-s> toggle_statusbar
 
-map <M-i> zoom in
-map <M-o> zoom out
+map <M-k> zoom in
+map <M-j> zoom out
