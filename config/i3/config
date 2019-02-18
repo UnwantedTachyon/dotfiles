@@ -33,6 +33,7 @@ font pango:Ubuntu Mono derivative Powerline 11
 # sets
 set $term --no-startup-id urxvt
 # set $term --no-startup-id st
+# set $term --no-startup-id termite
 set $browser firefox
 set $transparent #00000000
 
@@ -217,15 +218,15 @@ bar {
         urgent_workspace	#e53935		#e53935		#f3f4f5
      }
 
-#  black
-#     colors{
-#         background #000000
-#         separator #757575
-#         #                   border      background  text
-#         focused_workspace   #000000     #000000     #f3f4f5
-#         inactive_workspace  #000000     #000000     #676e7d
-#         urgent_workspace    #e53935     #e53935     #f3f4f5
-# }
+## black
+##      colors{
+##          background #000000
+##          separator #757575
+##          #                   border      background  text
+##          focused_workspace   #000000     #000000     #f3f4f5
+##          inactive_workspace  #000000     #000000     #676e7d
+##          urgent_workspace    #e53935     #e53935     #f3f4f5
+##  }
 
 }
 
@@ -239,14 +240,15 @@ bar {
 # smart_gaps on
 # hide_edge_borders smart_no_gaps
 
-for_window [class="^.*"] border pixel 2
+for_window [class="^.*"] border pixel 0
 gaps inner 15
 gaps outer 15
 
 exec_always compton -f
 
-exec --no-startup-id feh --bg-scale ~/wallpapers/reddit7.jpg
-bindsym $mod+Shift+x exec i3lock-fancy
+exec --no-startup-id feh --bg-scale ~/wallpapers/oneplus.jpg
+# bindsym $mod+Shift+x exec i3lock-fancy
+bindsym $mod+Shift+x exec betterlockscreen -l
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
@@ -296,7 +298,9 @@ bindsym $mod+Shift+K		    resize shrink height 10 px or 10 ppt
 
 bindsym $mod+Shift+L		    resize grow width 10 px or 10 ppt
 
-bindsym $mod+m			        exec $term -e vis
+# bindsym $mod+m			        exec $term -e cava
+bindsym $mod+m                  exec $term -name "Music" -e ncmpcpp
+for_window [class=URxvt instance="Music"] floating enable, resize set 910 585, move position 510 260
 
 bindsym $mod+Shift+Z		    exec zathura
 
@@ -314,7 +318,14 @@ bindsym $mod+Shift+B          scratchpad show
 
 exec --no-startup-id /home/tachyon/scripts/battest.sh
 
-bindsym $mod+n                  exec termite --name="Sticky"
+bindsym $mod+n                  exec termite --name="Sticky" -e fish
 for_window [instance=Sticky] floating enable, sticky enable, resize set 800 500, move position 1120 580
 
 bindsym $mod+BackSpace          exec --no-startup-id bash ~/scripts/flash_win.sh
+
+# exec_always --no-startup-id ./i3-battery-popup/i3-battery-popup -n
+###### exec_always rm -rf ~/.i3-battery-popup.lock
+exec --no-startup-id numlockx on
+exec --no-startup-id mpd
+## exec_always --no-startup-id blurwal
+
