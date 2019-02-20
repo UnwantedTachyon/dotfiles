@@ -76,7 +76,9 @@ URxvt.lineSpace: 4
 !     |
 !     |
 !     V
-URxvt.font: xft: MonacoB:size=13, xft:Font Awesome 5 Brands:size=9, xft:Font Awesome 5 Free Solid:size=7, xft:devicons:size=10, xft: Droid Sans Mono Nerd Font Mono:size=12, xft: airline_powerline_fonts:size=11, xft:Ubuntu Mono derivative Powerline:size=8, xft:Powerline:size=100, xft:Dejavu Sans Mono Nerd Font, xft:Hack, xft:FantasqueSansMono-Regular:size=8, xft:MaterialIcons-Regular:size=8, xft:FantasqueSansMono-Regular:size=8, xft:Iosevka Nerd Font Complete:size=8
+URxvt.font: xft: MonacoB:size=13, xft:Font Awesome 5 Brands:size=9, xft:Font Awesome 5 Free Solid:size=7, xft:devicons:size=10, xft: Droid Sans Mono Nerd Font Mono:size=12, xft: Symbola, xft: airline_powerline_fonts:size=11, xft:Ubuntu Mono derivative Powerline:size=8, xft:Powerline:size=100, xft: icomoon:size=8, xft:Dejavu Sans Mono Nerd Font, xft:Hack, xft:FantasqueSansMono-Regular:size=8, xft:MaterialIcons-Regular:size=8, xft:FantasqueSansMono-Regular:size=8, xft:Iosevka Nerd Font Complete:size=8, xft:Meslo LG L Regular for Powerline:size=12, xft:UbuntuMono Nerd Font:size=13, xft:Inconsolata Nerd Font Mono:size=13, xft:DejaVuSansMono Nerd Font:size=13, xft:DroidSansMono Nerd Font:size=13, xft:FuraMono Nerd Font:size=13, xft:RobotoMono Nerd Font:size=13, xft:Noto Sans Mono:size=13, xft:Monospace:style=Medium:size=13
+
+! URxvt.font: xft: MonacoB:size=13, xft:Font Awesome 5 Brands:size=9, xft:Font Awesome 5 Free Solid:size=7, xft:devicons:size=10, xft: Droid Sans Mono Nerd Font Mono:size=12, xft: airline_powerline_fonts:size=11, xft:Ubuntu Mono derivative Powerline:size=8, xft:Powerline:size=100, xft:Dejavu Sans Mono Nerd Font, xft:Hack, xft:FantasqueSansMono-Regular:size=8, xft:MaterialIcons-Regular:size=8, xft:FantasqueSansMono-Regular:size=8, xft:Iosevka Nerd Font Complete:size=8
 ! URxvt.font: xft: Droid Sans Mono Nerd Font Mono:size=12
 ! URxvt.font: xft: Monaco Nerd Font Complete Mono Nerd Font Mono:size=12
 ! xft:Font Awesome 5 Free Regular:size=12
