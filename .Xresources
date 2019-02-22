@@ -2,45 +2,45 @@
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ST !!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !! The default colors are "Gruvbox":
-! *.color0: #1d2021
-! *.color1: #cc241d
-! *.color2: #98971a
-! *.color3: #d79921
-! *.color4: #458588
-! *.color5: #b16286
-! *.color6: #689d6a
-! *.color7: #a89984
-! *.color8: #928374
-! *.color9: #fb4934
-! *.color10: #b8bb26
-! *.color11: #fabd2f
-! *.color12: #83a598
-! *.color13: #d3869b
-! *.color14: #8ec07c
-! *.color15: #ebdbb2
+!!  *.color0: #1d2021
+!!  *.color1: #cc241d
+!!  *.color2: #98971a
+!!  *.color3: #d79921
+!!  *.color4: #458588
+!!  *.color5: #b16286
+!!  *.color6: #689d6a
+!!  *.color7: #a89984
+!!  *.color8: #928374
+!!  *.color9: #fb4934
+!!  *.color10: #b8bb26
+!!  *.color11: #fabd2f
+!!  *.color12: #83a598
+!!  *.color13: #d3869b
+!!  *.color14: #8ec07c
+!!  *.color15: #ebdbb2
+!!
+!!
+!!  *.background:	#1D1F28
+!!  *.foreground:	#FDFDFD
+! *.cursorColor:	#C574DD
+! *.color0:	#282A36
+! *.color1:	#F37F97
+! *.color2:	#5ADECD
+! *.color3:	#F2A272
+! *.color4:	#8897F4
+! *.color5:	#C574DD
+! *.color6:	#79E6F3
+! *.color7:	#FDFDFD
+! *.color8:	#414458
+! *.color9:	#FF4971
+! *.color10:	#18E3C8
+! *.color11:	#FF8037
+! *.color12:	#556FFF
+! *.color13:	#B043D1
+! *.color14:	#3FDCEE
+! *.color15:	#ffffff
 
-
-*.background:	#1D1F28
-*.foreground:	#FDFDFD
-*.cursorColor:	#C574DD
-*.color0:	#282A36
-*.color1:	#F37F97
-*.color2:	#5ADECD
-*.color3:	#F2A272
-*.color4:	#8897F4
-*.color5:	#C574DD
-*.color6:	#79E6F3
-*.color7:	#FDFDFD
-*.color8:	#414458
-*.color9:	#FF4971
-*.color10:	#18E3C8
-*.color11:	#FF8037
-*.color12:	#556FFF
-*.color13:	#B043D1
-*.color14:	#3FDCEE
-*.color15:	#ffffff
-
-*saveLines: 1000
+*saveLines: 10000
 
 !! Transparency (0-255):
 st.alpha: 240
@@ -77,8 +77,6 @@ URxvt.lineSpace: 4
 !     |
 !     V
 URxvt.font: xft: MonacoB:size=13, xft:Font Awesome 5 Brands:size=9, xft:Font Awesome 5 Free Solid:size=7, xft:devicons:size=10, xft: Droid Sans Mono Nerd Font Mono:size=12, xft: Symbola, xft: airline_powerline_fonts:size=11, xft:Ubuntu Mono derivative Powerline:size=8, xft:Powerline:size=100, xft: icomoon:size=8, xft:Dejavu Sans Mono Nerd Font, xft:Hack, xft:FantasqueSansMono-Regular:size=8, xft:MaterialIcons-Regular:size=8, xft:FantasqueSansMono-Regular:size=8, xft:Iosevka Nerd Font Complete:size=8, xft:Meslo LG L Regular for Powerline:size=12, xft:UbuntuMono Nerd Font:size=13, xft:Inconsolata Nerd Font Mono:size=13, xft:DejaVuSansMono Nerd Font:size=13, xft:DroidSansMono Nerd Font:size=13, xft:FuraMono Nerd Font:size=13, xft:RobotoMono Nerd Font:size=13, xft:Noto Sans Mono:size=13, xft:Monospace:style=Medium:size=13
-
-! URxvt.font: xft: MonacoB:size=13, xft:Font Awesome 5 Brands:size=9, xft:Font Awesome 5 Free Solid:size=7, xft:devicons:size=10, xft: Droid Sans Mono Nerd Font Mono:size=12, xft: airline_powerline_fonts:size=11, xft:Ubuntu Mono derivative Powerline:size=8, xft:Powerline:size=100, xft:Dejavu Sans Mono Nerd Font, xft:Hack, xft:FantasqueSansMono-Regular:size=8, xft:MaterialIcons-Regular:size=8, xft:FantasqueSansMono-Regular:size=8, xft:Iosevka Nerd Font Complete:size=8
 ! URxvt.font: xft: Droid Sans Mono Nerd Font Mono:size=12
 ! URxvt.font: xft: Monaco Nerd Font Complete Mono Nerd Font Mono:size=12
 ! xft:Font Awesome 5 Free Regular:size=12
@@ -86,49 +84,91 @@ URxvt.font: xft: MonacoB:size=13, xft:Font Awesome 5 Brands:size=9, xft:Font Awe
 ! URxvt.internalBorder:     22
 URxvt.internalBorder:   20
 ! =================
-URxvt*background:	#1D1F28
-URxvt*foreground:	#FDFDFD
-URxvt*cursorColor:	#C574DD
-URxvt.highlighTextColor: #424242
-URxvt*color0:	#282A36
-URxvt*color1:	#F37F97
-URxvt*color2:	#5ADECD
-URxvt*color3:	#F2A272
-URxvt*color4:	#8897F4
-URxvt*color5:	#C574DD
-URxvt*color6:	#79E6F3
-URxvt*color7:	#FDFDFD
-URxvt*color8:	#414458
-URxvt*color9:	#FF4971
-URxvt*color10:	#18E3C8
-URxvt*color11:	#FF8037
-URxvt*color12:	#556FFF
-URxvt*color13:	#B043D1
-URxvt*color14:	#3FDCEE
-URxvt*color15:	#ffffff
+! ORIGINAL HERE
+!!!!    URxvt*background:	#1D1F28
+!!!!    URxvt*foreground:	#FDFDFD
+!!!!    URxvt*cursorColor:	#C574DD
+!!!!    URxvt.highlighTextColor: #424242
+!!!!    URxvt*color0:	#282A36
+!!!!    URxvt*color1:	#F37F97
+!!!!    URxvt*color2:	#5ADECD
+!!!!    URxvt*color3:	#F2A272
+!!!!    URxvt*color4:	#8897F4
+!!!!    URxvt*color5:	#C574DD
+!!!!    URxvt*color6:	#79E6F3
+!!!!    URxvt*color7:	#FDFDFD
+!!!!    URxvt*color8:	#414458
+!!!!    URxvt*color9:	#FF4971
+!!!!    URxvt*color10:	#18E3C8
+!!!!    URxvt*color11:	#FF8037
+!!!!    URxvt*color12:	#556FFF
+!!!!    URxvt*color13:	#B043D1
+!!!!    URxvt*color14:	#3FDCEE
+!!!!    URxvt*color15:	#ffffff
 
+!! skyfall
+! *background:  #282F37
+! *foreground:  #F1FCF9
+! *cursorColor: #F1FCF9
+! *color0:      #20262C
+! *color1:      #DB86BA
+! *color2:      #74DD91
+! *color3:      #E49186
+! *color4:      #75DBE1
+! *color5:      #B4A1DB
+! *color6:      #9EE9EA
+! *color7:      #F1FCF9
+! *color8:      #465463
+! *color9:      #D04E9D
+! *color10:     #4BC66D
+! *color11:     #DB695B
+! *color12:     #3DBAC2
+! *color13:     #825ECE
+! *color14:     #62CDCD
+! *color15:     #E0E5E5
 
-! URxvt*background: #282828
-! URxvt*foreground: white
-! URxvt*color0: #1d2021
-! URxvt*color1: #cc241d
-! URxvt*color2: #98971a
-! URxvt*color3: #d79921
-! URxvt*color4: #458588
-! URxvt*color5: #b16286
-! URxvt*color6: #689d6a
-! URxvt*color7: #a89984
-! URxvt*color8: #928374
-! URxvt*color9: #fb4934
-! URxvt*color10: #b8bb26
-! URxvt*color11: #fabd2f
-! URxvt*color12: #83a598
-! URxvt*color13: #d3869b
-! URxvt*color14: #8ec07c
-! URxvt*color15: #ebdbb2
+!! manta
+! *background:	#1E2541
+! *foreground:	#EEFFFF
+! *cursorColor:	#EEFFFF
+! *color0:	#1E2541
+! *color1:	#F0719B
+! *color2:	#5AF7B0
+! *color3:	#FFA56B
+! *color4:	#57C7FF
+! *color5:	#C792EA
+! *color6:	#89DDFF
+! *color7:	#EEFFFF
+! *color8:	#354274
+! *color9:	#F02E6E
+! *color10:	#2CE592
+! *color11:	#FF8537
+! *color12:	#1DA0E2
+! *color13:	#A742EA
+! *color14:	#47BAE8
+! *color15:	#DEE6E7
+! *color16: #2A335A
 
-! urxvt*depth: 32
-! urxvt*background: rgba:0040/0040/0040/c800
+!! lovelace
+*background:	#1D1F28
+*foreground:	#FDFDFD
+*cursorColor:	#C574DD
+*color0:	#282A36
+*color1:	#F37F97
+*color2:	#5ADECD
+*color3:	#F2A272
+*color4:	#8897F4
+*color5:	#C574DD
+*color6:	#79E6F3
+*color7:	#FDFDFD
+*color8:	#414458
+*color9:	#FF4971
+*color10:	#18E3C8
+*color11:	#FF8037
+*color12:	#556FFF
+*color13:	#B043D1
+*color14:	#3FDCEE
+*color15: #BEBEC1
 
 URxvt.perl-lib: /usr/lib/urxvt/perl/
 URxvt.perl-ext-common: default,matcher,resize-font,url-select,keyboard-select
@@ -151,3 +191,39 @@ URxvt.iso14755_52: false
 
 ! urxvt*blurRadius: 10
 ! URxvt.transparent : 1
+
+
+
+!!!!!!!!!!!!!!!!!! ROFI !!!!!!!!!!!!!!!!!!
+
+! Enable the extended coloring options
+!!!!!    rofi.color-enabled: true
+!!!!!    !                  bg             border   separator
+!!!!!    rofi.color-window: argb:992f343f, argb:00000000,  900000,
+!!!!!    !                  bg             fg       bg-alt   hl-bg    hl-fg
+!!!!!    rofi.color-normal: argb:00000000, #FFFFFF, 000000, 000000,   #f8ae19
+!!!!!    rofi.color-active: argb:00000000, #FFFFFF, argb:00000000,   argb:00000000, #f8ae19
+!!!!!    rofi.color-urgent: #2f343f, #2f343f, #2f343f, #2f343f, #2f343f
+
+rofi.separator-style: none
+rofi.sidebar-mode: true
+rofi.bw: 1
+rofi.columns: 1
+rofi.padding: 16
+
+rofi.yoffset: 0
+rofi.fake-transparency: false
+rofi.location: 0
+rofi.width: 500
+rofi.hide-scrollbar: true
+rofi.font: Monaco 12
+rofi.lines: 12
+rofi.fixed-num-lines: true
+
+
+
+rofi.color-enabled: true
+rofi.color-window: #bf0A161B, #bf0A161B, #00000000
+rofi.color-normal: #00000000, #d6e7f3, #00000000, #1287BC, #0A161B
+rofi.color-active: #00000000, #d6e7f3, #00000000, #1287BC, #0A161B
+rofi.color-urgent: #00000000, #d6e7f3, #00000000, #1287BC, #0A161B
