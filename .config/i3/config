@@ -13,11 +13,10 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:Ubuntu Mono derivative Powerline 11
+font pango:Ubuntu Mono derivative Powerline 10
 # font pango:MonacoB 10
 # font pango:Monaco 9
-# font pango:Monospace 10 				# bad
-# font pango:System San Francisco Display 10		# bad
+# font pango:System San Francisco Display 11
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -41,7 +40,8 @@ set $transparent #00000000
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec $term
+bindsym $mod+Return             exec $term
+bindsym $mod+Shift+Return       exec st
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -59,7 +59,11 @@ bindsym $mod+mod1+9 [workspace=$ws9] kill
 bindsym $mod+mod1+0 [workspace=$ws10] kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec rofi -show run
+bindsym $mod+d          exec rofi -show run
+# bindsym $mod+Shift+D    exec rofi -show window -eh 1 -theme ~/.config/rofi/themes/list -display-window "🤖"
+# bindsym $mod+d exec ~/scripts/rofi
+
+##### bindsym $mod+d exec dmenu_run -fn Monaco -nf blue -sf black -sb blue -p Command
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -88,6 +92,12 @@ bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
+
+# alternatively,
+bindsym $mod+Shift+u move left
+bindsym $mod+Shift+p move right
+bindsym $mod+Shift+i move down
+bindsym $mod+Shift+o move up
 
 # split in horizontal orientation
 bindsym $mod+h split h
@@ -126,7 +136,7 @@ set $ws3 "3 "
 set $ws4 "4 "
 set $ws5 "5 "
 set $ws6 "6 "
-set $ws7 "7 "
+set $ws7 "7 "
 set $ws8 "8 "
 set $ws9 "9 "
 set $ws10 "10 "
@@ -206,27 +216,39 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 bar {
 	status_command i3blocks
     position top
+    height 20
    	# status_command ~/build/bumblebee-status/bumblebee-status -m nic spotify cpu caffeine bluetooth battery pasink pasource date time -p time.format="%H:%M CW %V" date.format="%a, %b %d %Y" -t solarized-powerline
 
 # gray
-    colors{
-        background #2f343f
-        separator #757575
-        #		border		background	text
-        focused_workspace	#2f343f		#2f343f		#f3f4f5
-        inactive_workspace	#2f343f		#2f343f		#676e7d
-        urgent_workspace	#e53935		#e53935		#f3f4f5
-     }
+##       colors{
+##           background #2f343f
+##           separator #757575
+##           #		border		background	text
+##           focused_workspace	#2f343f		#2f343f		#f3f4f5
+##           inactive_workspace	#2f343f		#2f343f		#676e7d
+##           urgent_workspace	#e53935		#e53935		#f3f4f5
+##        }
 
-## black
-##      colors{
-##          background #000000
-##          separator #757575
-##          #                   border      background  text
-##          focused_workspace   #000000     #000000     #f3f4f5
-##          inactive_workspace  #000000     #000000     #676e7d
-##          urgent_workspace    #e53935     #e53935     #f3f4f5
-##  }
+##  black
+    colors{
+        background #000000
+        separator #757575
+        #                   border      background  text
+        focused_workspace   #000000     #000000     #f3f4f5
+        inactive_workspace  #000000     #000000     #676e7d
+        urgent_workspace    #e53935     #e53935     #f3f4f5
+}
+
+## Pink
+##       colors{
+##           background #DCBFDC
+##           separator #757575
+##           #                   border      background  text
+##           focused_workspace   #DCBFDC     #DCBFDC     #000000
+##           inactive_workspace  #DCBFDC     #DCBFDC     #67637d
+##           urgent_workspace    #e53935     #e53935     #f3f4f5
+##   }
+
 
 }
 
@@ -240,13 +262,17 @@ bar {
 # smart_gaps on
 # hide_edge_borders smart_no_gaps
 
+for_window [title="^.*"] border pixel 0
 for_window [class="^.*"] border pixel 0
 gaps inner 15
 gaps outer 15
 
 exec_always compton -f
+##### Don't forget rofi/dmenu
 
-exec --no-startup-id feh --bg-scale ~/wallpapers/oneplus.jpg
+
+
+exec --no-startup-id feh --bg-scale ~/wallpapers/wall_luke.jpg
 # bindsym $mod+Shift+x exec i3lock-fancy
 bindsym $mod+Shift+x exec betterlockscreen -l
 
@@ -279,7 +305,7 @@ exec pactl set-sink-volume 0 +0%
 bindsym $mod+s			        gaps inner current plus 5
 bindsym $mod+Shift+S		    gaps inner current minus 5
 
-bindsym $mod+Shift+D		    gaps inner all set 0; gaps outer all set 0
+bindsym $mod+Shift+a		    gaps inner all set 0; gaps outer all set 0
 
 bindsym $mod+r			        exec --no-startup-id $term -e ranger
 bindsym $mod+Shift+T		    gaps inner all set 15; gaps outer all set 15
@@ -300,7 +326,7 @@ bindsym $mod+Shift+L		    resize grow width 10 px or 10 ppt
 
 # bindsym $mod+m			        exec $term -e cava
 bindsym $mod+m                  exec $term -name "Music" -e ncmpcpp
-for_window [class=URxvt instance="Music"] floating enable, resize set 910 585, move position 510 260
+for_window [class=URxvt instance="Music"] floating enable, resize set 910 585, move position 535 270
 
 bindsym $mod+Shift+Z		    exec zathura
 
@@ -318,8 +344,11 @@ bindsym $mod+Shift+B          scratchpad show
 
 exec --no-startup-id /home/tachyon/scripts/battest.sh
 
-bindsym $mod+n                  exec termite --name="Sticky" -e fish
+bindsym $mod+n                  exec termite --name="Nonsticky"
+for_window [instance=Nonsticky] floating enable, resize set 800 500, move position 1120 580
+bindsym $mod+Shift+N            exec termite --name="Sticky" -e fish
 for_window [instance=Sticky] floating enable, sticky enable, resize set 800 500, move position 1120 580
+
 
 bindsym $mod+BackSpace          exec --no-startup-id bash ~/scripts/flash_win.sh
 
@@ -329,3 +358,10 @@ exec --no-startup-id numlockx on
 exec --no-startup-id mpd
 ## exec_always --no-startup-id blurwal
 
+bindsym $mod+grave exec --no-startup-id bash ~/scripts/dmenuunicode
+for_window [class=feh] floating enable
+
+bindsym $mod+Shift+Print        exec $term -name "Time" -e tty-clock
+for_window [class=URxvt instance="Time"] floating enable, resize set 415 270, move position 1510 20
+
+for_window [class=Impactor] floating enable
